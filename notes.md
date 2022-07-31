@@ -10,4 +10,9 @@
 ```
 ![img.png](images-notes/platonic-shapes.png)
 
+# preserveAspectRatio
 
+Default: `preserveAspectRatio="xMidYMid meet"`  
+![img.png](images-notes/meet.png)
+![img.png](images-notes/none.png)
+![img.png](images-notes/slice.png)
