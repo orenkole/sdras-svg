@@ -40,5 +40,40 @@ Best is Q, q
 
 https://codepen.io/anthonydugois/pen/mewdyZ  
 
+# Animated Bezier curves & template literals
 
+https://www.jasondavies.com/animated-bezier/
 
+---
+
+Plot the points  
+```js
+function plotte(points, startX) {
+  var pathArr = []
+  var pathPoints = [];
+  for (i = 0; i <= inc; i++) {
+    pathPoints.push(points + ((i * (points *2)) + points));
+    pathArr.push (` ${startX} ${pathpoints[i]}`);
+  }
+  return pathArr;
+}
+
+rope1.setAttribute("d", `M ${plotter(50, start1)}`.join(" L"))
+```
+
+```js
+function newWobble(rate, startX) {
+  var in1 = startX + rate;
+  var pathArr2 = plotter(rate, startX);
+  
+  for(i = 0; i <= inc; i++) {
+    var QRate = rate + (i + 1) * (rte * 2);
+    if (i % 2 === 0) {
+      pathArr2[i] = `${pathArr2[i]} Q ${Math.round(in1)} ${QRate /*...*/}`
+    } else {
+      pathArr2[i] = `${pathArr2[i]} Q ${Math.round(in2)} ${QRate}`
+    }
+  }
+  return `M ${pathArr2.join("")} ${startX} ${(inc * (rate * 2)) + /*...*/}`
+}
+```
