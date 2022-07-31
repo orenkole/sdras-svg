@@ -77,3 +77,16 @@ function newWobble(rate, startX) {
   return `M ${pathArr2.join("")} ${startX} ${(inc * (rate * 2)) + /*...*/}`
 }
 ```
+
+## Accessibility
+
+## Optimizing and building
+
+Object > path > simpllify
+
+---
+
+replace multiple pathes with one line
+
+---
+
